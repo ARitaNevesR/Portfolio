@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Judson', serif;
+}
+
+/* --------------------------- SCROLLBAR ---------------------------*/
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #000200; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #061640; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* --------------------------- NAVBAR ---------------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px 0 200px;
+    background-color: #000200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+#nav-one {
+    display: block;
+}
+
+#nav-two {
+    display: none;
+}
+
+.navbar {
+    padding-right: 20%;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 25.5px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar .effect{
+    color: white;
+}
+
+.navbar .effect::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+}
+
+.navbar .effect:hover::before{
+    width: 100%;
+}
+
+.contact{
+    color: #000200;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    transition: 0.3s ease-in;
+}
+
+.contact:hover{
+    background-color: #000200;
+    color: white;
+    text-shadow: 10px 0px 20px white;
+    transition: 0.3s ease-out;
+}
+
+/* --------------------------- SIDEBAR ---------------------------*/
+
+.sidebar {
+    height: 100%;
+    width: 90px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #061640;
+    overflow-x: hidden;
+    padding-top: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.sidebar a{
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    left: 0;
+    font-size: 50px;
+    color: white;
+    display: block;
+}
+
+/* --------------------------- CONTEÚDO ---------------------------*/
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+    background-color: #050123;
+    gap: 1vw;
+}
+
+.container{
+    margin-top: 10%;
+} 
+
+h1 {
+    color: white;
+    font-size: 4vw;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #000200;
+    width: 60vw;
+    padding: 1vw;
+  }
+
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 15vw;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #061640;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #061640;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+    height: 30vw;
+    width: 60vw;
+    font-size: 1vw;
+  }
+
+  .tabcontent .img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabcontent .gif{
+    width: 40vw;
+    height: auto;
+  }
+
+  .tabcontent .img{
+    width: 20vw;
+    height: auto;
+  }
+  .tabcontent p, h3{
+    color: white;
+  }

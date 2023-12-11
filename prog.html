@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rita Neves</title>
+    <link rel="stylesheet" href="css/prog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script src="js/prog.js"></script>
+
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <a href="#home" class="home"><img src="images/logo-white.png" class= "logo" alt="logo"></a>
+        <nav class="navbar" id="nav-one">
+            <a href="home.html#home" class="effect">Home</a>
+            <a href="home.html#sobre" class="effect">Sobre</a>
+            <a href="home.html#exp" class="effect">Experiência</a>
+            <a href="home.html#trabalhos" class="effect">Trabalhos</a>
+            <a href="home.html#contactos" class="contact">Contactos</a>
+        </nav>
+        <nav class="navbar-2" id="nav-two">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-navicon"></i></button>
+                <div class="dropdown-content">
+                  <a href="home.html#home">Home</a>
+                  <a href="home.html#sobre">Sobre</a>
+                  <a href="home.html#extra">Extra</a>
+                  <a href="home.html#capacidades">Capacidades</a>
+                  <a href="home.html#exp">Experiência</a>
+                  <a href="home.html#trabalhos">Trabalhos</a>
+                  <a href="home.html#contactos">Contactos</a>
+                </div>
+              </div> 
+        </nav>
+
+    </header>
+    <!--/Header-->
+
+    <!--Sidebar-->
+    
+    <div class="sidebar">
+        <a href="https://github.com/ARitaNevesR" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+
+    <!--/Sidebar-->
+
+
+
+    <section>
+        <div class="container">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'egg')">EggCursion</button>
+            <button class="tablinks" onclick="openCity(event, 'forum')">Forum-Node</button>
+            <button class="tablinks" onclick="openCity(event, 'drift')">Drift Semide</button>
+        </div>
+          
+          <!-- Tab content -->
+        <div id="egg" class="tabcontent">
+            <h3>EggCursion</h3>
+            <br>
+            <p>Neste trabalho foi realizado um pequeno jogo 2D, em canvas, baseado na música <a href="https://www.youtube.com/watch?v=qB_I1YBAozE>" style="color: white"><i>'Lazy - X-Press 2 Ft. David Byrne'</i></a></p>
+            <p>Para alcançar o objetivo final, o personagem deverá passar por três fases, acompanhado por um temporizador. Deste modo, o jogo pode ser também utilizado como speedrun.</p>
+            <p>Além disto, o jogo também possuí pequenos dialogos que apresentam a história do jogo e os desafios.</p>
+            <br>
+            <p><a href="https://github.com/ARitaNevesR/EggCursion">Link para o repositório.</a></p>
+            <br><br>
+            <div class="img-div">
+                <img class="eggcursion" src="images/eggcursion2.png">
+            </div>
+            <div class="autor">
+                <p class="peq">Trabalho feito por: Rita Neves, Beatriz Portugal. </p>
+            </div>
+        </div>
+          
+          <div id="forum" class="tabcontent">
+            <h3>Forum - Node</h3>
+            <br>
+            <p>Neste pequeno Forum encontram-se as seguintes funcionalidades: login, registo, logout, criação de posts, ver posts, upload de ficheiros .txt, modificação destes ficheiros, 'search bar', comentários, entre outros.</p>
+            <br>
+            <p><a href="https://github.com/ARitaNevesR/Forum-Node">Link para o repositório.</a></p>            
+            <br><br>
+            <div class="img-div">
+                <img class="img" src="images/forum2.png">
+            </div>
+            <div class="autor">
+                <p class="peq">Trabalho feito por: Rita Neves, Beatriz Portugal. </p>
+            </div>
+          </div>
+
+          <div id="drift" class="tabcontent">
+            <h3>Drift Touge Semide</h3>
+            <br>
+            <p>Website criado como possível exemplo de website para o evento "Drift Touge Semide".</p>
+            <br>
+            <p><a href="https://github.com/ARitaNevesR/DriftSemideWebsite">Link para o repositório.</a></p>
+            <br><br>
+            <div class="img-div">
+                <img class="img" src="images/drift.png">
+            </div>
+            <div class="autor">
+                <p class="peq">Trabalho feito por: Rita Neves, Beatriz Portugal, Inês Dionísio e Claúdia Granadeiro. </p>
+            </div>
+          </div>
+    </div>
+    </section>
+
+
+    <script>
+        window.location.href = window.location.href + '#trabalhos';
+    </script>
+    
+</body>
+</html>
