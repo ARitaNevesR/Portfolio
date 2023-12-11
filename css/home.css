@@ -1108,14 +1108,14 @@ textarea{
         display: flex;
         flex-flow: column;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         color: white;
     }
     
     .box {
         background-color: #061640;
         border-radius: 40px;
-        width: 80%;
+        width: 100%;
         height: auto;
     }
     
@@ -1130,7 +1130,7 @@ textarea{
     }
     
     .text-box{
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -1138,7 +1138,7 @@ textarea{
     }
     
     .work-six h1{
-        font-size: 30px;
+        font-size: 22px;
         font-weight: bold;
     }
     
@@ -1148,7 +1148,7 @@ textarea{
     }
     
     .work-six p{
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .prev-button, .next-button {
