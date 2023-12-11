@@ -213,3 +213,229 @@ h1 {
   .tabcontent p, h3{
     color: white;
   }
+
+  @media screen and (max-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Judson', serif;
+    }
+    
+    /* --------------------------- SCROLLBAR ---------------------------*/
+    
+    
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+      
+      /* Track */
+    ::-webkit-scrollbar-track {
+        background: #000200; 
+    }
+       
+      /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #061640; 
+    }
+      
+      /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+    
+    /* --------------------------- NAVBAR ---------------------------*/
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 100px 0 100px;
+        background-color: #000200;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    
+    #nav-one {
+        display: none;
+    }
+
+    #nav-two{
+        display: block;
+    }
+
+    .navbar-2 {
+        padding-right: 10%;
+        overflow: hidden;
+    }
+
+    .navbar-2 a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 30px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .dropdown {
+        margin-right: 100px;
+        overflow: hidden;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #061640;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+      
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+      
+    .dropdown-content a:hover {
+        background-color: #000200;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* --------------------------- SIDEBAR ---------------------------*/
+    
+    .sidebar {
+        height: 100%;
+        width: 10px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #061640;
+        overflow-x: hidden;
+        padding-top: 16px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .sidebar a{
+        display: none;
+    }
+
+    /* --------------------------- CONTEÚDO ---------------------------*/
+section {
+  position: relative;
+  padding: 10vw 0 0 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: start;
+  background-color: #050123;
+  gap: 1vw;
+}
+
+.container{
+  margin-top: 10%;
+} 
+
+h1 {
+  color: white;
+  font-size: 22px;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #000200;
+  width: 80vw;
+  padding: 1vw;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width: 35vw;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #061640;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #061640;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 1vw;
+  border: 1px solid #ccc;
+  border-radius: 0 0 20px 20px;
+  border-top: none;
+  height: 70vw;
+  width: 79vw;
+  font-size: 1vw;
+}
+
+.tabcontent .img-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabcontent .gif{
+  width: 60vw;
+  height: auto;
+}
+
+.tabcontent .img{
+  width: 40vw;
+  height: auto;
+}
+.tabcontent p, h3{
+  padding: 1.5vw;
+  color: white;
+  font-size: 14px;
+}
+
+
+  }
